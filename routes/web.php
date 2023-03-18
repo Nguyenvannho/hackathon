@@ -16,8 +16,9 @@ use App\Http\Controllers\LocationController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('user.layout.master');
 });
+
 Route::get('/location', [Controller::class, 'index'])->name('location.index');
 Route::get('/search', [Controller::class, 'search'])->name('location.search');
 
